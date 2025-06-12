@@ -18,15 +18,14 @@ class NetworkManager {
     Map<String, String> headers = HeaderHelper.basicHeaders,
     Map<String, dynamic>? queryParameters,
     Map<String, dynamic>? body,
-    String? serverUrl
+    String serverUrl = ServerConfiguration.serverUrl
   }) {
-    final String serverUrlL = serverUrl ?? ServerConfiguration.serverUrl;
     final Endpoint endpoint = UriHelper.prepareUri(
       prepareEndpoint,
       ServerConfiguration.httpType,
       parameters: parameters,
       queryParameters: queryParameters,
-      serverUrl: serverUrlL,
+      serverUrl: serverUrl,
     );
 
     Future<Response> request;
