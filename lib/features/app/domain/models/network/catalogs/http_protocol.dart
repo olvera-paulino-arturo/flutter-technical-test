@@ -1,0 +1,3 @@
+enum HttpProtocol {
+  http, https
+}
