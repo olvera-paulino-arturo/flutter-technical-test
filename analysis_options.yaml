@@ -1,0 +1,39 @@
+include: package:flutter_lints/flutter.yaml
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+
+linter:
+  rules:
+    always_declare_return_types: true
+    always_specify_types: true
+    avoid_relative_lib_imports: true
+    camel_case_types: true
+    prefer_final_fields: true
+    prefer_const_constructors: true
+    prefer_typing_uninitialized_variables: true
+    type_annotate_public_apis: true
+    prefer_is_empty: true
+    prefer_final_locals: true
+    prefer_single_quotes: true
+    file_names: true
+    curly_braces_in_flow_control_structures: true
+    always_use_package_imports: true
+    prefer_const_literals_to_create_immutables: true
+
+
+analyzer:
+  language:
+    strict-inference: true
+    strict-raw-types: true
+  exclude: [build/**]
+  errors:
+    invalid_annotation_target: error
+    undefined_class: error
+    missing_return: error
+  strong-mode:
+    implicit-casts: false
+
+
+
+

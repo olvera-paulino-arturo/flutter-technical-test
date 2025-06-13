@@ -1,0 +1,19 @@
+{
+  "moviePageTitle": "Películas",
+  "movieDetailsPageTitle": "Detalles de la pelicula",
+  "movieReleaseDateTitle": "Fecha de estreno",
+  "movieOriginalLanguageTitle": "Idioma original",
+  "buttonCinemaSearch": "Encontrar cine",
+  "homeTab": "Inicio",
+  "logoutTab" : "Salir",
+
+  "authPage" : "Login",
+  "authTitle": "Incia Sesión",
+  "authButton": "Ingresa con OAuth",
+  "authButtonLog": "Ingresa con Biometría",
+  "authBiometricMessage": "Por favor, autentíquese para iniciar sesión.",
+
+  "language": "Idioma:",
+  "spanishLabel": "Español",
+  "englishLabel": "Inglés"
+}
