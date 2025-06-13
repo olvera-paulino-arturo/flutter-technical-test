@@ -1,4 +1,4 @@
-import 'package:contpaqi_technical_test/core/utils/types/action_types.dart';
+import 'package:contpaqi_technical_test/core/types/action_types.dart';
 import 'package:contpaqi_technical_test/features/app/presentation/theme/catalogs/app_decorations.dart';
 import 'package:flutter/material.dart';
 

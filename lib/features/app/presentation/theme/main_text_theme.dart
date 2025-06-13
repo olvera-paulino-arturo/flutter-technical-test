@@ -6,11 +6,13 @@ class MainTextTheme {
   static TextTheme lightTheme = GoogleFonts.openSansTextTheme().copyWith(
     titleMedium: TextStyles.title,
     bodyMedium: TextStyles.text,
+    labelMedium: TextStyles.label
   );
 
   static TextTheme darkTheme = GoogleFonts.openSansTextTheme().copyWith(
     titleMedium: TextStyles.title,
     bodyMedium: TextStyles.text,
+    labelMedium: TextStyles.label
   );
 
 

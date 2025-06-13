@@ -5,5 +5,15 @@
   "movieOriginalLanguageTitle": "Original language",
   "buttonCinemaSearch": "Find cinema",
   "homeTab": "Home",
-  "logoutTab" : "Logout"
+  "logoutTab" : "Logout",
+  "authPage" : "Login",
+  "authTitle" : "Sign In",
+  "authButton": "Enter with OAuth",
+  "authButtonLog": "Enter with Biometric",
+
+  "authBiometricMessage": "Please authenticate to sign in.",
+
+  "language": "Language:",
+  "spanishLabel": "Spanish",
+  "englishLabel": "English"
 }
