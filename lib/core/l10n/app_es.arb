@@ -1,3 +1,9 @@
 {
-  "helloWorld": "Hola mundo!"
+  "moviePageTitle": "Películas",
+  "movieDetailsPageTitle": "Detalles de la pelicula",
+  "movieReleaseDateTitle": "Fecha de estreno",
+  "movieOriginalLanguageTitle": "Idioma original",
+  "buttonCinemaSearch": "Encontrar cine",
+  "homeTab": "Inicio",
+  "logoutTab" : "Salir"
 }
