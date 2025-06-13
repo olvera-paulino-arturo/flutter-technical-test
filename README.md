@@ -1,16 +1,67 @@
-# contpaqi_technical_test
+# contpaqi_technical_test 
 
-A new Flutter project.
+Aplicación Flutter que integra múltiples capacidades modernas, incluyendo autenticación OAuth2.0, biometría, mapas con rendimiento optimizado, internacionalización, pruebas y Clean Architecture. 
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Arquitectura Utilizada
 
-A few resources to get you started if this is your first Flutter project:
+Se implementó **Clean Architecture**, estructurada en tres capas principales:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Presentation**: Manejo de UI y lógica de presentación con BLoC.
+- **Domain**: Entidades, casos de uso y lógica pura del negocio.
+- **Data**: Implementación de fuentes de datos (API) y modelos de request/response.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Además, la arquitectura está modularizada por **features** (`auth`, `movies`, `map`, etc.) y se apoya en una capa **core** que centraliza recursos reutilizables como mapeadores, helpers, constantes, y servicios comunes.
+
+---
+
+## Paquetes principales
+
+| Paquete                | Propósito                                       |
+|------------------------|-------------------------------------------------|
+| `flutter_bloc`         | Gestión de estado y lógica por pantalla.       |
+| `http`                 | Consumo eficiente de API REST.                 |
+| `flutter_appauth`      | Autenticación OAuth 2.0 con Asgardeo.          |
+| `flutter_secure_storage` | Almacenamiento seguro de tokens.             |
+| `local_auth`           | Login biométrico tras la primera autenticación.|
+| `google_maps_flutter`  | Visualización de mapas y markers dinámicos.    |
+| `flutter_localizations` + `.arb` | Soporte para español e inglés.      |
+
+---
+
+## Decisiones Técnicas Clave
+
+- **Patrón BLoC** fue elegido por su escalabilidad, claridad en flujos y buen soporte en pruebas.
+- **Almacenamiento seguro** de tokens (`access` y `refresh`) en `flutter_secure_storage` para proteger datos sensibles.
+- **Login inicial con OAuth2.0**, y autenticación posterior con biometría para mejorar experiencia de usuario.
+- **Cluster y Lazy Loading** para markers en Google Maps, evitando caída de rendimiento con miles de elementos.
+- **Internacionalización** siguiendo convención `componenteSubcomponente` (`authButtonLabel`, `movieDetailTitle`, etc.) para facilitar consistencia y traducciones.
+- **Pruebas unitarias** centradas en lógica de negocio como generación eficiente de markers y validación de manejo de errores HTTP.
+- **CI/CD** implementado mediante `flutter.yml` en GitHub Actions: se genera automáticamente un `.apk` en la rama `main`.
+
+---
+
+## Funcionalidades Destacadas
+
+- Autenticación segura mediante OAuth2.0 con Asgardeo.
+- Login biométrico tras la autenticación inicial.
+- Soporte bilingüe (Español e Inglés) con archivos `.arb`.
+- Google Maps con enfoque en rendimiento: markers dinámicos, lazy loading y clustering.
+- Pantalla de películas actuales en cartelera, con imágenes y metadatos en múltiples idiomas.
+- Pruebas unitarias del dominio y manejo de estados.
+- Automatización de builds en GitHub Actions.
+
+---
+
+## Automatización
+
+Se incluye archivo `flutter.yml` para GitHub Actions, el cual:
+
+- Se activa en cada push a la rama `main`.
+- Ejecuta pruebas.
+- Genera el `.apk` automáticamente.
+
+---
+
+
