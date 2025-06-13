@@ -5,5 +5,15 @@
   "movieOriginalLanguageTitle": "Idioma original",
   "buttonCinemaSearch": "Encontrar cine",
   "homeTab": "Inicio",
-  "logoutTab" : "Salir"
+  "logoutTab" : "Salir",
+
+  "authPage" : "Login",
+  "authTitle": "Incia Sesión",
+  "authButton": "Ingresa con OAuth",
+  "authButtonLog": "Ingresa con Biometría",
+  "authBiometricMessage": "Por favor, autentíquese para iniciar sesión.",
+
+  "language": "Idioma:",
+  "spanishLabel": "Español",
+  "englishLabel": "Inglés"
 }

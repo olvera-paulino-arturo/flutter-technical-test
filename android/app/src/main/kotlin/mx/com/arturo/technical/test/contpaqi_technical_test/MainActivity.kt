@@ -1,5 +1,5 @@
 package mx.com.arturo.technical.test.contpaqi_technical_test
 
-import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity
 
-class MainActivity : FlutterActivity()
+class MainActivity : FlutterFragmentActivity()

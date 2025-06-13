@@ -13,4 +13,9 @@ class TextStyles {
     color: AppColors.lightTextColor,
     fontSize: 14,
   );
+
+  static TextStyle label = GoogleFonts.openSans().copyWith(
+    color: AppColors.lightTextColor,
+    fontSize: 12,
+  );
 }

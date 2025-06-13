@@ -5,7 +5,7 @@ import 'package:contpaqi_technical_test/core/helper/header_helper.dart';
 import 'package:contpaqi_technical_test/core/helper/uri_helper.dart';
 import 'package:contpaqi_technical_test/core/network/error/network_exception.dart';
 import 'package:contpaqi_technical_test/core/network/validator/network_validator.dart';
-import 'package:contpaqi_technical_test/core/utils/server_configuration.dart';
+import 'package:contpaqi_technical_test/core/constants/server_configuration.dart';
 import 'package:contpaqi_technical_test/features/app/domain/models/network/catalogs/http_type.dart';
 import 'package:contpaqi_technical_test/features/app/domain/models/network/endpoint.dart';
 import 'package:http/http.dart' show Client, Response;
